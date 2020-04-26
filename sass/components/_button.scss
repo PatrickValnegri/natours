@@ -40,6 +40,15 @@ padding top+bottom left+right
             background-color: $color-white;
         }
     }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
     
     //we NEED to specify content
     //is like a child of the btn
