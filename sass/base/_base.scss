@@ -1,0 +1,22 @@
+//box-sizing: inherit forced inhertance
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*
+62.5% of 16px(browser default) = 10px
+like that 10 px = 1 rem 
+lenght convertions use font-size
+*/
+html {
+    //This define what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
