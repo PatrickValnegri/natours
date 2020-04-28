@@ -2,6 +2,8 @@
 padding top+bottom left+right
 */
 .btn {
+    //applied to btn as well
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -12,6 +14,10 @@ padding top+bottom left+right
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+
+        //change for the <button> element
+        border: none;
+        cursor: pointer;
     }
 
     //y go from top to bottom
@@ -27,7 +33,9 @@ padding top+bottom left+right
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
     }
