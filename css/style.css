@@ -1,3 +1,20 @@
+/*
+0px - 600px         Phone
+600px - 900px       Tablet portrait
+900px - 1200px      Tablet landscape
+[1200px - 1800px]   Normal style
+1800px+             Big desktop
+
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+Order: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,11 +24,17 @@
 
 /*
 62.5% of 16px(browser default) = 10px
-like that 10 px = 1 rem 
-lenght convertions use font-size
+
+lenght convertions use font-size 
 */
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
+  @media (max-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
