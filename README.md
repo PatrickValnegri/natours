@@ -1,2 +1,2 @@
 # natours
-CSS advanced course project #1
+Natours project#1 from Advanced CSS and Sass course
