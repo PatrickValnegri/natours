@@ -168,7 +168,9 @@
         font-weight: 300;
     }
 
-    @include respond(tab-port) {
+    //@include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+           only screen and (hover:none) { //media query is applied with device that cant use hover element
         height: auto;
         border-radius: 3px;
         background-color: $color-white;

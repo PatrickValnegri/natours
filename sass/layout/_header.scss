@@ -28,9 +28,9 @@ clip-path polygon to build the cropped image
     //600/16 = 37.5em 16px is deafult font size
     //900/16 = 125em
 
-    @media  (min-resoulution: 192dpi) and (min-width: 37.5em), //when is > 192 and > 600px the media query is used
-            (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), //safari doesnt suport min resoultion
-            (min-width: 125em){  //or width is > 2000px
+    @media only screen and (min-resoulution: 192dpi) and (min-width: 37.5em), //when is > 192 and > 600px the media query is used
+           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), //safari doesnt suport min resoultion
+           only screen and (min-width: 125em){  //or width is > 2000px
         background-image: linear-gradient(
             to right bottom,
             rgba($color-primary-light, 0.8),
